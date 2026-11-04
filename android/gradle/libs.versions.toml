@@ -1,0 +1,6 @@
+[versions]
+agp = "9.5.0"
+
+[plugins]
+# AGP 9 include il supporto Kotlin: non serve il plugin org.jetbrains.kotlin.android.
+android-application = { id = "com.android.application", version.ref = "agp" }

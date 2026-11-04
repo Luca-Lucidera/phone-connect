@@ -1,0 +1,12 @@
+[tools]
+# JDK per Gradle e l'app Android.
+java = "temurin-21"
+
+[env]
+# SDK Android dedicato al progetto, separato da quelli di Unity e Meta Quest Developer Hub.
+ANDROID_HOME = "{{env.LOCALAPPDATA}}/Android/Sdk"
+# Server adb su una porta diversa dalla 5037: altre app sul PC (Meta Quest
+# Developer Hub, O+ Connect) usano versioni diverse di adb, e un client di
+# versione diversa sulla stessa porta chiude il loro server.
+ANDROID_ADB_SERVER_PORT = "5038"
+_.path = ["{{env.LOCALAPPDATA}}/Android/Sdk/platform-tools"]

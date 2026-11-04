@@ -1,0 +1,15 @@
+[package]
+name = "phone-connect-desktop"
+description = "UI desktop di Phone Connect (gpui)"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[[bin]]
+name = "phone-connect"
+path = "src/main.rs"
+
+[dependencies]
+phone-connect-core.workspace = true
+gpui.workspace = true

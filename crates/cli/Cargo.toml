@@ -1,0 +1,15 @@
+[package]
+name = "phone-connect-cli"
+description = "Daemon e CLI di Phone Connect"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+
+[[bin]]
+name = "phc"
+path = "src/main.rs"
+
+[dependencies]
+phone-connect-core.workspace = true
+clap.workspace = true

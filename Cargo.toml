@@ -1,0 +1,14 @@
+[workspace]
+resolver = "3"
+members = ["crates/core", "crates/cli", "crates/desktop"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+publish = false
+
+[workspace.dependencies]
+phone-connect-core = { path = "crates/core" }
+clap = { version = "4.6", features = ["derive"] }
+gpui = "0.2.2"
